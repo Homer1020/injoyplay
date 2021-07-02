@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>InJoyPlay</title>
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<!-- Quicksanc Font -->
+	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+	<!-- Open sans Font -->
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,600&display=swap" rel="stylesheet">
+	<!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+  <!-- Swiper Slider -->
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+	
+	<!-- Site header -->
+	<header class="site-header">
+		<div class="container">
+			<a href="/" class="site-header__brand">
+				<img src="assets/img/logo.svg" alt="Logo InJoyPlay">
+			</a>
+
+			<form action="#" class="site-header__search search__wrapper">
+				<div class="input-icon">
+					<i class="fa fa-search"></i>
+					<input type="text" class="form-control" placeholder="Evento, equipo o artista" id="search">
+				</div>
+				<!-- Search -->
+				<div class="search">
+					<h2 class="search__title">Eventos</h2>
+					<ul class="search__results">
+						<li>
+							<div class="search__content">
+								<img src="assets/img/s-img.jpg" alt="blog">
+								<div>
+									<h3>Carnaval de fin de mes</h3>
+									<p>Estadio monumental</p>
+								</div>
+							</div>
+							<div class="search__date">
+								<p>
+									Sab, 12 Oct<br>
+									20:00
+								</p>
+							</div>
+						</li>
+						<li>
+							<div class="search__content">
+								<img src="assets/img/s-img.jpg" alt="blog">
+								<div>
+									<h3>Carnaval de fin de mes</h3>
+									<p>Estadio monumental</p>
+								</div>
+							</div>
+							<div class="search__date">
+								<p>
+									Sab, 12 Oct<br>
+									20:00
+								</p>
+							</div>
+						</li>
+						<li>
+							<div class="search__content">
+								<img src="assets/img/s-img.jpg" alt="blog">
+								<div>
+									<h3>Carnaval de fin de mes</h3>
+									<p>Estadio monumental</p>
+								</div>
+							</div>
+							<div class="search__date">
+								<p>
+									Sab, 12 Oct<br>
+									20:00
+								</p>
+							</div>
+						</li>
+					</ul>
+					<div class="search__footer">
+						<a href="#" class="color-secondary">Ver todos los resultados para <strong>Carnaval</strong></a>
+					</div>
+				</div>
+				<!-- End Search -->
+			</form>
+
+			<button class="site-header__btn-search">
+				<i class="fa fa-search"></i>
+			</button>
+
+			<div class="site-header__social">
+				<a href="#" class="social-icon">
+					<i class="fab fa-facebook"></i>
+				</a>
+				<a href="#" class="social-icon">
+					<i class="fab fa-instagram"></i>
+				</a>
+			</div>
+		</div>
+	</header>
+	<!-- End Site header -->
+
+	<div class="banner-icon">
+		<div class="banner-icon__content">
+			<img src="assets/img/chat.svg" alt="Ilustración" style="position: relative; top: 50px;">
+			<h2>Contáctanos</h2>
+		</div>
+	</div>
+
+	<main class="container--sm">
+		<section class="section">
+			<h2 class="section__title color-black section__title--sm">Déjanos un mensaje y pronto nos comunicaremos contigo.</h2>
+			<form action="#">
+				<div class="form-group">
+					<label for="" class="form-group__label form-group__label--require">Nombre completo</label>	
+					<input type="text" class="form-group__input">
+				</div>
+				<div class="form-group__grid">
+					<div class="form-group">
+						<label for="" class="form-group__label form-group__label--require">Correo de contacto</label>	
+						<input type="email" class="form-group__input" placeholder="tucorreo@ejemplo.com">
+					</div>
+					<div class="form-group">
+						<label for="" class="form-group__label form-group__label--require">Télefono</label>
+						<div class="form-group__tel-wrapper">
+							<div class="form-group__tel-s">
+								+ 51
+							</div>
+							<input type="text" class="form-group__input">
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="" class="form-group__label form-group__label--require">Motivo del mensaje</label>
+						<div class="select-wrapper">
+							<i class="fa fa-angle-down color-black"></i>
+							<select class="select">
+								<option selected value="def" disabled>Seleccionar</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="" class="form-group__label form-group__label--require">Descripción</label>
+					<textarea rows="10" class="form-group__input"></textarea>
+				</div>
+				<button type="submit" class="btn btn--primary" disabled>Enviar</button>
+			</form>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<div class="site-footer__navbar">
+			<div class="container">
+				<nav class="site-footer__nav">
+					<h3>
+						Conócenos
+						<i class="fa fa-angle-down color-secondary"></i>
+					</h3>
+					<ul class="active">
+						<li>
+							<a href="#">Acerca de nosotros</a>
+						</li>
+					</ul>
+				</nav>
+				<nav class="site-footer__nav">
+					<h3>
+						¿Necesitas ayuda?
+						<i class="fa fa-angle-down color-secondary"></i>
+					</h3>
+					<ul>
+						<li>
+							<a href="#">Preguntas frecuentes</a>
+						</li>
+						<li>
+							<a href="#">Contáctanos</a>
+						</li>
+					</ul>
+				</nav>
+				<nav class="site-footer__nav">
+					<h3>
+						Políticas
+						<i class="fa fa-angle-down color-secondary"></i>
+					</h3>
+					<ul>
+						<li>
+							<a href="#">Política de privacidad</a>
+						</li>
+						<li>
+							<a href="#">Política de cookies</a>
+						</li>
+						<li>
+							<a href="#">Términos y condiciones de uso</a>
+						</li>
+					</ul>
+				</nav>
+				<nav class="site-footer__nav">
+					<h3>
+						Contáctanos
+						<i class="fa fa-angle-down color-secondary"></i>
+					</h3>
+					<ul>
+						<li>Escribenos a nuestra casilla de correo:</li>
+						<li class="site-footer__email">
+							<i class="fa fa-envelope"></i>
+							Contacto@injoyplan.com
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<div class="site-footer__end">
+			<div class="container">
+				<p class="copy-right">Copyright © 2021 Injoyplan</p>
+
+				<div class="site-footer__social-wrapper">
+					<div class="site-footer__social">
+						<a href="#" class="social-icon">
+							<i class="fab fa-facebook"></i>
+						</a>
+						<a href="#" class="social-icon">
+							<i class="fab fa-twitter"></i>
+						</a>
+						<a href="#" class="social-icon">
+							<i class="fab fa-instagram"></i>
+						</a>
+						<a href="#" class="social-icon">
+							<i class="fab fa-youtube"></i>
+						</a>
+					</div>
+					<div class="book">
+						<img src="assets/img/book.png" alt="Libro icono">
+						<p>Libro de Reclamaciones</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Swiper Slider -->
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<!-- Script -->
+	<script src="assets/js/app.js"></script>
+</body>
+</html>

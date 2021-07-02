@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>InJoyPlay</title>
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<!-- Quicksanc Font -->
+	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+	<!-- Open sans Font -->
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,600&display=swap" rel="stylesheet">
+	<!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+  <!-- Swiper Slider -->
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+	
+	<!-- Site header -->
+	<header class="site-header">
+		<div class="container">
+			<a href="/" class="site-header__brand">
+				<img src="assets/img/logo.svg" alt="Logo InJoyPlay">
+			</a>
+
+			<form action="#" class="site-header__search search__wrapper">
+				<div class="input-icon">
+					<i class="fa fa-search"></i>
+					<input type="text" class="form-control" placeholder="Evento, equipo o artista" id="search">
+				</div>
+				<!-- Search -->
+				<div class="search">
+					<h2 class="search__title">Eventos</h2>
+					<ul class="search__results">
+						<li>
+							<div class="search__content">
+								<img src="assets/img/s-img.jpg" alt="blog">
+								<div>
+									<h3>Carnaval de fin de mes</h3>
+									<p>Estadio monumental</p>
+								</div>
+							</div>
+							<div class="search__date">
+								<p>
+									Sab, 12 Oct<br>
+									20:00
+								</p>
+							</div>
+						</li>
+						<li>
+							<div class="search__content">
+								<img src="assets/img/s-img.jpg" alt="blog">
+								<div>
+									<h3>Carnaval de fin de mes</h3>
+									<p>Estadio monumental</p>
+								</div>
+							</div>
+							<div class="search__date">
+								<p>
+									Sab, 12 Oct<br>
+									20:00
+								</p>
+							</div>
+						</li>
+						<li>
+							<div class="search__content">
+								<img src="assets/img/s-img.jpg" alt="blog">
+								<div>
+									<h3>Carnaval de fin de mes</h3>
+									<p>Estadio monumental</p>
+								</div>
+							</div>
+							<div class="search__date">
+								<p>
+									Sab, 12 Oct<br>
+									20:00
+								</p>
+							</div>
+						</li>
+					</ul>
+					<div class="search__footer">
+						<a href="#" class="color-secondary">Ver todos los resultados para <strong>Carnaval</strong></a>
+					</div>
+				</div>
+				<!-- End Search -->
+			</form>
+
+			<button class="site-header__btn-search">
+				<i class="fa fa-search"></i>
+			</button>
+
+			<div class="site-header__social">
+				<a href="#" class="social-icon">
+					<i class="fab fa-facebook"></i>
+				</a>
+				<a href="#" class="social-icon">
+					<i class="fab fa-instagram"></i>
+				</a>
+			</div>
+		</div>
+	</header>
+	<!-- End Site header -->
+
+	<!-- Search bar -->
+	<div class="search-bar">
+		<div class="container">
+			<div class="material-input">
+			  <input type="email" id="correo" autocomplete="off">
+			  <label for="correo">Déjanos tu correo y te avisamos</label>
+			  <i class="fa fa-search"></i>
+			</div>
+			<div class="btn btn--outline-light btn--outline-white t-uppercase">Buscar</div>
+		</div>
+	</div>
+	<!-- End Search bar -->
+
+	<main class="container search-mvp">
+		<div class="search-mvp__aside">
+			<div class="card">
+				<div class="card__body">
+					<h2 class="card__title">Filtros de búsqueda</h2>
+					<div class="selects">
+						<div class="select-wrapper">
+							<select name="" id="" class="select">
+								<option value="ubc" selected disabled>Ubicación</option>
+							</select>
+							<i class="fa fa-angle-down"></i>
+						</div>
+						<div class="select-wrapper">
+							<select name="" id="" class="select">
+								<option value="ubc" selected disabled>Ubicación</option>
+							</select>
+							<i class="fa fa-angle-down"></i>
+						</div>
+						<div class="select-wrapper">
+							<select name="" id="" class="select">
+								<option value="ubc" selected disabled>Ubicación</option>
+							</select>
+							<i class="fa fa-angle-down"></i>
+						</div>
+						<div class="select-wrapper">
+							<select name="" id="" class="select">
+								<option value="ubc" selected disabled>Ubicación</option>
+							</select>
+							<i class="fa fa-angle-down"></i>
+						</div>
+					</div>
+					<div class="checkboxes">
+						<label class="checkbox">
+							<input type="checkbox">
+							Eventos en curso
+						</label>
+						<label class="checkbox">
+							<input type="checkbox">
+							Eventos gratuitos
+						</label>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="cards--search">
+			<!-- Card item -->
+			<div class="cards__item">
+				<article class="card card--horizontal">
+					<div class="t-uppercase card__date">
+						19<br>
+						Oct
+					</div>
+					<div class="card__img-container">
+						<img src="https://cdn.pixabay.com/photo/2020/06/01/10/02/puffin-5246026_960_720.jpg" alt="Imágen x" class="card__img-top">
+						<div class="card__img-views">Visto <span>21 veces</span></div>
+						<div class="card__img-actions">
+							<i class="fa fa-share-alt"></i>
+							<i class="far fa-heart"></i>
+						</div>
+					</div>
+					<div class="card__body">
+						<div class="card-horizontal__start">
+							<h3 class="card__title">La historia de Santa Beatriz XYXXX</h3>
+						
+							<div class="date">
+								<p class="t-uppercase">
+									10<br>
+									Ene
+								</p>
+								<p>
+									Sáb 16:00 - 22:00<br>
+									Zoom
+								</p>
+							</div>
+						</div>
+
+						<div class="card--horizontal__end">
+							<div class="card__price">
+								<p>Desde</p>
+								<p>S/ 15.00</p>
+							</div>
+
+							<div class="card__actions">
+								<i class="fa fa-share-alt"></i>
+								<i class="far fa-heart"></i>
+							</div>
+						</div>
+					</div>
+				</article>
+				<a href="" class="color-gray t-uppercase fwb">
+					Ver Fuente
+					<i class="fa fa-angle-right"></i>
+				</a>
+			</div>
+			<!-- End Card Item -->
+			<!-- Card item -->
+			<div class="cards__item">
+				<article class="card card--horizontal">
+					<div class="t-uppercase card__date">
+						19<br>
+						Oct
+					</div>
+					<div class="card__img-container">
+						<img src="https://cdn.pixabay.com/photo/2020/06/01/10/02/puffin-5246026_960_720.jpg" alt="Imágen x" class="card__img-top">
+						<div class="card__img-views">Visto <span>21 veces</span></div>
+						<div class="card__img-actions">
+							<i class="fa fa-share-alt"></i>
+							<i class="far fa-heart"></i>
+						</div>
+					</div>
+					<div class="card__body">
+						<div class="card-horizontal__start">
+							<h3 class="card__title">La historia de Santa Beatriz XYXXX</h3>
+						
+							<div class="date">
+								<p class="t-uppercase">
+									10<br>
+									Ene
+								</p>
+								<p>
+									Sáb 16:00 - 22:00<br>
+									Zoom
+								</p>
+							</div>
+						</div>
+
+						<div class="card--horizontal__end">
+							<div class="card__price">
+								<p>Desde</p>
+								<p>S/ 15.00</p>
+							</div>
+
+							<div class="card__actions">
+								<i class="fa fa-share-alt"></i>
+								<i class="far fa-heart"></i>
+							</div>
+						</div>
+					</div>
+				</article>
+				<a href="" class="color-gray t-uppercase fwb">
+					Ver Fuente
+					<i class="fa fa-angle-right"></i>
+				</a>
+			</div>
+			<!-- End Card Item -->
+			<!-- Card item -->
+			<div class="cards__item">
+				<article class="card card--horizontal">
+					<div class="t-uppercase card__date">
+						19<br>
+						Oct
+					</div>
+					<div class="card__img-container">
+						<img src="https://cdn.pixabay.com/photo/2020/06/01/10/02/puffin-5246026_960_720.jpg" alt="Imágen x" class="card__img-top">
+						<div class="card__img-views">Visto <span>21 veces</span></div>
+						<div class="card__img-actions">
+							<i class="fa fa-share-alt"></i>
+							<i class="far fa-heart"></i>
+						</div>
+					</div>
+					<div class="card__body">
+						<div class="card-horizontal__start">
+							<h3 class="card__title">La historia de Santa Beatriz XYXXX</h3>
+						
+							<div class="date">
+								<p class="t-uppercase">
+									10<br>
+									Ene
+								</p>
+								<p>
+									Sáb 16:00 - 22:00<br>
+									Zoom
+								</p>
+							</div>
+						</div>
+
+						<div class="card--horizontal__end">
+							<div class="card__price">
+								<p>Desde</p>
+								<p>S/ 15.00</p>
+							</div>
+
+							<div class="card__actions">
+								<i class="fa fa-share-alt"></i>
+								<i class="far fa-heart"></i>
+							</div>
+						</div>
+					</div>
+				</article>
+				<a href="" class="color-gray t-uppercase fwb">
+					Ver Fuente
+					<i class="fa fa-angle-right"></i>
+				</a>
+			</div>
+			<!-- End Card Item -->
+			<!-- Card item -->
+			<div class="cards__item">
+				<article class="card card--horizontal">
+					<div class="t-uppercase card__date">
+						19<br>
+						Oct
+					</div>
+					<div class="card__img-container">
+						<img src="https://cdn.pixabay.com/photo/2020/06/01/10/02/puffin-5246026_960_720.jpg" alt="Imágen x" class="card__img-top">
+						<div class="card__img-views">Visto <span>21 veces</span></div>
+						<div class="card__img-actions">
+							<i class="fa fa-share-alt"></i>
+							<i class="far fa-heart"></i>
+						</div>
+					</div>
+					<div class="card__body">
+						<div class="card-horizontal__start">
+							<h3 class="card__title">La historia de Santa Beatriz XYXXX</h3>
+						
+							<div class="date">
+								<p class="t-uppercase">
+									10<br>
+									Ene
+								</p>
+								<p>
+									Sáb 16:00 - 22:00<br>
+									Zoom
+								</p>
+							</div>
+						</div>
+
+						<div class="card--horizontal__end">
+							<div class="card__price">
+								<p>Desde</p>
+								<p>S/ 15.00</p>
+							</div>
+
+							<div class="card__actions">
+								<i class="fa fa-share-alt"></i>
+								<i class="far fa-heart"></i>
+							</div>
+						</div>
+					</div>
+				</article>
+				<a href="" class="color-gray t-uppercase fwb">
+					Ver Fuente
+					<i class="fa fa-angle-right"></i>
+				</a>
+			</div>
+			<!-- End Card Item -->
+		</div>
+	</main>
+
+	<footer class="site-footer">
+		<div class="site-footer__navbar">
+			<div class="container">
+				<nav class="site-footer__nav">
+					<h3>
+						Conócenos
+						<i class="fa fa-angle-down color-secondary"></i>
+					</h3>
+					<ul class="active">
+						<li>
+							<a href="#">Acerca de nosotros</a>
+						</li>
+					</ul>
+				</nav>
+				<nav class="site-footer__nav">
+					<h3>
+						¿Necesitas ayuda?
+						<i class="fa fa-angle-down color-secondary"></i>
+					</h3>
+					<ul>
+						<li>
+							<a href="#">Preguntas frecuentes</a>
+						</li>
+						<li>
+							<a href="#">Contáctanos</a>
+						</li>
+					</ul>
+				</nav>
+				<nav class="site-footer__nav">
+					<h3>
+						Políticas
+						<i class="fa fa-angle-down color-secondary"></i>
+					</h3>
+					<ul>
+						<li>
+							<a href="#">Política de privacidad</a>
+						</li>
+						<li>
+							<a href="#">Política de cookies</a>
+						</li>
+						<li>
+							<a href="#">Términos y condiciones de uso</a>
+						</li>
+					</ul>
+				</nav>
+				<nav class="site-footer__nav">
+					<h3>
+						Contáctanos
+						<i class="fa fa-angle-down color-secondary"></i>
+					</h3>
+					<ul>
+						<li>Escribenos a nuestra casilla de correo:</li>
+						<li class="site-footer__email">
+							<i class="fa fa-envelope"></i>
+							Contacto@injoyplan.com
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<div class="site-footer__end">
+			<div class="container">
+				<p class="copy-right">Copyright © 2021 Injoyplan</p>
+
+				<div class="site-footer__social-wrapper">
+					<div class="site-footer__social">
+						<a href="#" class="social-icon">
+							<i class="fab fa-facebook"></i>
+						</a>
+						<a href="#" class="social-icon">
+							<i class="fab fa-twitter"></i>
+						</a>
+						<a href="#" class="social-icon">
+							<i class="fab fa-instagram"></i>
+						</a>
+						<a href="#" class="social-icon">
+							<i class="fab fa-youtube"></i>
+						</a>
+					</div>
+					<div class="book">
+						<img src="assets/img/book.png" alt="Libro icono">
+						<p>Libro de Reclamaciones</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Swiper Slider -->
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<!-- Script -->
+	<script src="assets/js/app.js"></script>
+</body>
+</html>

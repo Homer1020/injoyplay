@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>InJoyPlay</title>
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<!-- Quicksanc Font -->
+	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+	<!-- Open sans Font -->
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,600&display=swap" rel="stylesheet">
+	<!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+  <!-- Swiper Slider -->
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+	
+	<!-- Site header -->
+	<header class="site-header">
+		<div class="container">
+			<a href="/" class="site-header__brand">
+				<img src="assets/img/logo.svg" alt="Logo InJoyPlay">
+			</a>
+
+			<form action="#" class="site-header__search search__wrapper">
+				<div class="input-icon">
+					<i class="fa fa-search"></i>
+					<input type="text" class="form-control" placeholder="Evento, equipo o artista" id="search">
+				</div>
+				<!-- Search -->
+				<div class="search">
+					<h2 class="search__title">Eventos</h2>
+					<ul class="search__results">
+						<li>
+							<div class="search__content">
+								<img src="assets/img/s-img.jpg" alt="blog">
+								<div>
+									<h3>Carnaval de fin de mes</h3>
+									<p>Estadio monumental</p>
+								</div>
+							</div>
+							<div class="search__date">
+								<p>
+									Sab, 12 Oct<br>
+									20:00
+								</p>
+							</div>
+						</li>
+						<li>
+							<div class="search__content">
+								<img src="assets/img/s-img.jpg" alt="blog">
+								<div>
+									<h3>Carnaval de fin de mes</h3>
+									<p>Estadio monumental</p>
+								</div>
+							</div>
+							<div class="search__date">
+								<p>
+									Sab, 12 Oct<br>
+									20:00
+								</p>
+							</div>
+						</li>
+						<li>
+							<div class="search__content">
+								<img src="assets/img/s-img.jpg" alt="blog">
+								<div>
+									<h3>Carnaval de fin de mes</h3>
+									<p>Estadio monumental</p>
+								</div>
+							</div>
+							<div class="search__date">
+								<p>
+									Sab, 12 Oct<br>
+									20:00
+								</p>
+							</div>
+						</li>
+					</ul>
+					<div class="search__footer">
+						<a href="#" class="color-secondary">Ver todos los resultados para <strong>Carnaval</strong></a>
+					</div>
+				</div>
+				<!-- End Search -->
+			</form>
+
+			<button class="site-header__btn-search">
+				<i class="fa fa-search"></i>
+			</button>
+
+			<div class="site-header__social">
+				<a href="#" class="social-icon">
+					<i class="fab fa-facebook"></i>
+				</a>
+				<a href="#" class="social-icon">
+					<i class="fab fa-instagram"></i>
+				</a>
+			</div>
+		</div>
+	</header>
+	<!-- End Site header -->
+
+	<!-- Filters -->
+	<div class="filters">
+		<div class="container">
+			<div class="dropdown">
+				<div class="dropdown__header">
+					<i class="fa fa-user color-secondary"></i>
+					<span class="dropdown__title">
+						Eventos en <span class="color-secondary">Línea</span>
+					</span>
+					<i class="fa fa-angle-down"></i>
+				</div>
+				<div class="dropdown__list dropdown__list--search">
+					<div class="dropdown__list-search">
+						<input type="text" placeholder="Ciudad o distrito">
+						<i class="fa fa-times"></i>
+					</div>
+					<div class="dropdown__list-actions">
+						<a href="">
+							<i class="fa fa-user color-secondary"></i>
+							Utilizar mi ubicació
+						</a>
+						<a href="">
+							<i class="fa fa-user color-secondary"></i>
+							Eventos en línea
+						</a>
+					</div>
+					<div class="dropdown__list-resent">
+						<h3>Búsquedas recientes</h3>
+						<ul>
+							<li>
+								<span>Lima</span>
+								<span>Perú</span>
+							</li>
+							<li>
+								<span>Miraflores</span>
+								<span>Perú</span>
+							</li>
+							<li>
+								<span>Callao</span>
+								<span>Perú</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="dropdown">
+				<div class="dropdown__header">
+					<i class="fa fa-user color-secondary"></i>
+					<span class="dropdown__title">
+						Desde hoy
+					</span>
+					<i class="fa fa-angle-down"></i>
+				</div>
+				<ul class="dropdown__list">
+					<li class="active dropdown__item">
+						<a href="#">Hoy</a>
+					</li>
+					<li class="active dropdown__item">
+						<a href="#">Este fin de semana</a>
+					</li>
+					<li class="dropdown__item">
+						<a href="#">Este mes</a>
+					</li>
+					<li class="dropdown__item">
+						<a href="#">Elegir un día</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- End Filters -->
+
+	<main>
+		
+		<!-- Top categories -->
+		<section class="container top-categories">
+			<div class="top-categories__start">
+				<div class="swiper-container main-slider">
+				  <div class="swiper-wrapper">
+				    <div class="swiper-slide" style="background: linear-gradient(180deg, rgba(147, 32, 34, 0.32) 0%, rgba(0, 0, 0, 0.32) 100%), url(https://cdn.pixabay.com/photo/2021/06/20/16/57/woman-6351539_960_720.jpg);">
+				    	<div class="main-slider__content">
+				    		<h2 class="main-slider__title">
+				    			Estamos JOBdidos Vol. 2
+				    		</h2>
+				    		<div class="main-slider__date">
+				    			<div>
+				    				VIE
+				    				<br>
+				    				15 Ene
+				    			</div>
+				    			<div>
+				    				20:00 - 21:00 Joinnus Live
+				    			</div>
+				    		</div>
+				    		<a href="#" class="t-uppercase main-slider__btn">
+				    			Conoce más
+				    			<i class="fa fa-angle-right"></i>
+				    		</a>
+				    	</div>
+				    </div>
+				    <div class="swiper-slide" style="background: linear-gradient(180deg, rgba(147, 32, 34, 0.32) 0%, rgba(0, 0, 0, 0.32) 100%), url(https://cdn.pixabay.com/photo/2021/06/20/16/57/woman-6351539_960_720.jpg);">
+				    	<div class="main-slider__content">
+				    		<h2 class="main-slider__title">
+				    			Estamos JOBdidos Vol. 2
+				    		</h2>
+				    		<div class="main-slider__date">
+				    			<div>
+				    				VIE
+				    				<br>
+				    				15 Ene
+				    			</div>
+				    			<div>
+				    				20:00 - 21:00 Joinnus Live
+				    			</div>
+				    		</div>
+				    		<a href="#" class="t-uppercase main-slider__btn">
+				    			Conoce más
+				    			<i class="fa fa-angle-right"></i>
+				    		</a>
+				    	</div>
+				    </div>
+				    <div class="swiper-slide" style="background: linear-gradient(180deg, rgba(147, 32, 34, 0.32) 0%, rgba(0, 0, 0, 0.32) 100%), url(https://cdn.pixabay.com/photo/2021/06/20/16/57/woman-6351539_960_720.jpg);">
+				    	<div class="main-slider__content">
+				    		<h2 class="main-slider__title">
+				    			Estamos JOBdidos Vol. 2
+				    		</h2>
+				    		<div class="main-slider__date">
+				    			<div>
+				    				VIE
+				    				<br>
+				    				15 Ene
+				    			</div>
+				    			<div>
+				    				20:00 - 21:00 Joinnus Live
+				    			</div>
+				    		</div>
+				    		<a href="#" class="t-uppercase main-slider__btn">
+				    			Conoce más
+				    			<i class="fa fa-angle-right"></i>
+				    		</a>
+				    	</div>
+				    </div>
+				    ...
+				  </div>
+				  <div class="swiper-pagination"></div>
+				</div>
+				<a href="" class="color-gray t-uppercase more">
+					ver fuente
+					<i class="fa fa-angle-right"></i>
+				</a>
+			</div>
+			<div class="top-categories__end">
+				<div class="top-categories__grid">
+					<article class="categorie">
+						<div class="categorie__icon-container">
+							<img src="assets/img/icon-1.svg" alt="Icono" class="categorie__icon">
+						</div>
+						<div class="categorie__body">
+							<h3 class="categorie__title">Música</h3>
+							<a href="#" class="categorie__link color-primary">
+								10 eventos
+								<i class="fa fa-angle-right"></i>
+							</a>
+						</div>
+					</article>
+					<article class="categorie">
+						<div class="categorie__icon-container">
+							<img src="assets/img/icon-1.svg" alt="Icono" class="categorie__icon">
+						</div>
+						<div class="categorie__body">
+							<h3 class="categorie__title">Música</h3>
+							<a href="#" class="categorie__link color-primary">
+								10 eventos
+								<i class="fa fa-angle-right"></i>
+							</a>
+						</div>
+					</article>
+					<article class="categorie">
+						<div class="categorie__icon-container">
+							<img src="assets/img/icon-1.svg" alt="Icono" class="categorie__icon">
+						</div>
+						<div class="categorie__body">
+							<h3 class="categorie__title">Música</h3>
+							<a href="#" class="categorie__link color-primary">
+								10 eventos
+								<i class="fa fa-angle-right"></i>
+							</a>
+						</div>
+					</article>
+					<article class="categorie">
+						<div class="categorie__icon-container">
+							<img src="assets/img/icon-1.svg" alt="Icono" class="categorie__icon">
+						</div>
+						<div class="categorie__body">
+							<h3 class="categorie__title">Música</h3>
+							<a href="#" class="categorie__link color-primary">
+								10 eventos
+								<i class="fa fa-angle-right"></i>
+							</a>
+						</div>
+					</article>
+				</div>
+
+				<a href="" class="color-secondary t-uppercase more">
+					Todas las categorías +10
+					<i class="fa fa-angle-right"></i>
+				</a>
+			</div>
+		</section>
+		<!-- End Top categories -->
+
+		<section class="container section">
+			<h2 class="section__title">Descubre lo que sucede en <span class="color-primary t-underline">Línea</span></h2>
+
+			<div class="cards">
+				<!-- Card item -->
+				<div class="cards__item">
+					<article class="card">
+						<div class="card__img-container">
+							<img src="https://cdn.pixabay.com/photo/2020/06/01/10/02/puffin-5246026_960_720.jpg" alt="Imágen x" class="card__img-top">
+							<div class="card__img-views">Visto <span>21 veces</span></div>
+							<div class="card__img-actions">
+								<i class="fa fa-share-alt"></i>
+								<i class="far fa-heart"></i>
+							</div>
+						</div>
+						<div class="card__body">
+							<h3 class="card__title">La historia de Santa Beatriz XYXXX</h3>
+							
+							<div class="date">
+								<p class="t-uppercase">
+									10<br>
+									Ene
+								</p>
+								<p>
+									Sáb 16:00 - 22:00<br>
+									Zoom
+								</p>
+							</div>
+
+							<div class="card__price">
+								<p>Desde</p>
+								<p>S/ 15.00</p>
+							</div>
+						</div>
+					</article>
+					<a href="" class="color-gray t-uppercase fwb">
+						Ver Fuente
+						<i class="fa fa-angle-right"></i>
+					</a>
+				</div>
+				<!-- End Card Item -->
+				<!-- Card item -->
+				<div class="cards__item">
+					<article class="card">
+						<div class="card__img-container">
+							<img src="https://cdn.pixabay.com/photo/2020/06/01/10/02/puffin-5246026_960_720.jpg" alt="Imágen x" class="card__img-top">
+							<div class="card__img-views">Visto <span>21 veces</span></div>
+							<div class="card__img-actions">
+								<i class="fa fa-share-alt"></i>
+								<i class="far fa-heart"></i>
+							</div>
+						</div>
+						<div class="card__body">
+							<h3 class="card__title">La historia de Santa Beatriz XYXXX</h3>
+							
+							<div class="date">
+								<p class="t-uppercase">
+									10<br>
+									Ene
+								</p>
+								<p>
+									Sáb 16:00 - 22:00<br>
+									Zoom
+								</p>
+							</div>
+
+							<div class="card__price">
+								<p>Desde</p>
+								<p>S/ 15.00</p>
+							</div>
+						</div>
+					</article>
+					<a href="" class="color-gray t-uppercase fwb">
+						Ver Fuente
+						<i class="fa fa-angle-right"></i>
+					</a>
+				</div>
+				<!-- End Card Item -->
+				<!-- Card item -->
+				<div class="cards__item">
+					<article class="card">
+						<div class="card__img-container">
+							<img src="https://cdn.pixabay.com/photo/2020/06/01/10/02/puffin-5246026_960_720.jpg" alt="Imágen x" class="card__img-top">
+							<div class="card__img-views">Visto <span>21 veces</span></div>
+							<div class="card__img-actions">
+								<i class="fa fa-share-alt"></i>
+								<i class="far fa-heart"></i>
+							</div>
+						</div>
+						<div class="card__body">
+							<h3 class="card__title">La historia de Santa Beatriz XYXXX</h3>
+							
+							<div class="date">
+								<p class="t-uppercase">
+									10<br>
+									Ene
+								</p>
+								<p>
+									Sáb 16:00 - 22:00<br>
+									Zoom
+								</p>
+							</div>
+
+							<div class="card__price">
+								<p>Desde</p>
+								<p>S/ 15.00</p>
+							</div>
+						</div>
+					</article>
+					<a href="" class="color-gray t-uppercase fwb">
+						Ver Fuente
+						<i class="fa fa-angle-right"></i>
+					</a>
+				</div>
+				<!-- End Card Item -->
+				<!-- Card item -->
+				<div class="cards__item">
+					<article class="card">
+						<div class="card__img-container">
+							<img src="https://cdn.pixabay.com/photo/2020/06/01/10/02/puffin-5246026_960_720.jpg" alt="Imágen x" class="card__img-top">
+							<div class="card__img-views">Visto <span>21 veces</span></div>
+							<div class="card__img-actions">
+								<i class="fa fa-share-alt"></i>
+								<i class="far fa-heart"></i>
+							</div>
+						</div>
+						<div class="card__body">
+							<h3 class="card__title">La historia de Santa Beatriz XYXXX</h3>
+							
+							<div class="date">
+								<p class="t-uppercase">
+									10<br>
+									Ene
+								</p>
+								<p>
+									Sáb 16:00 - 22:00<br>
+									Zoom
+								</p>
+							</div>
+
+							<div class="card__price">
+								<p>Desde</p>
+								<p>S/ 15.00</p>
+							</div>
+						</div>
+					</article>
+					<a href="" class="color-gray t-uppercase fwb">
+						Ver Fuente
+						<i class="fa fa-angle-right"></i>
+					</a>
+				</div>
+				<!-- End Card Item -->
+				<!-- Card item -->
+				<div class="cards__item">
+					<article class="card">
+						<div class="card__img-container">
+							<img src="https://cdn.pixabay.com/photo/2020/06/01/10/02/puffin-5246026_960_720.jpg" alt="Imágen x" class="card__img-top">
+							<div class="card__img-views">Visto <span>21 veces</span></div>
+							<div class="card__img-actions">
+								<i class="fa fa-share-alt"></i>
+								<i class="far fa-heart"></i>
+							</div>
+						</div>
+						<div class="card__body">
+							<h3 class="card__title">La historia de Santa Beatriz XYXXX</h3>
+							
+							<div class="date">
+								<p class="t-uppercase">
+									10<br>
+									Ene
+								</p>
+								<p>
+									Sáb 16:00 - 22:00<br>
+									Zoom
+								</p>
+							</div>
+
+							<div class="card__price">
+								<p>Desde</p>
+								<p>S/ 15.00</p>
+							</div>
+						</div>
+					</article>
+					<a href="" class="color-gray t-uppercase fwb">
+						Ver Fuente
+						<i class="fa fa-angle-right"></i>
+					</a>
+				</div>
+				<!-- End Card Item -->
+				<!-- Card item -->
+				<div class="cards__item">
+					<article class="card">
+						<div class="card__img-container">
+							<img src="https://cdn.pixabay.com/photo/2020/06/01/10/02/puffin-5246026_960_720.jpg" alt="Imágen x" class="card__img-top">
+							<div class="card__img-views">Visto <span>21 veces</span></div>
+							<div class="card__img-actions">
+								<i class="fa fa-share-alt"></i>
+								<i class="far fa-heart"></i>
+							</div>
+						</div>
+						<div class="card__body">
+							<h3 class="card__title">La historia de Santa Beatriz XYXXX</h3>
+							
+							<div class="date">
+								<p class="t-uppercase">
+									10<br>
+									Ene
+								</p>
+								<p>
+									Sáb 16:00 - 22:00<br>
+									Zoom
+								</p>
+							</div>
+
+							<div class="card__price">
+								<p>Desde</p>
+								<p>S/ 15.00</p>
+							</div>
+						</div>
+					</article>
+					<a href="" class="color-gray t-uppercase fwb">
+						Ver Fuente
+						<i class="fa fa-angle-right"></i>
+					</a>
+				</div>
+				<!-- End Card Item -->
+				<!-- Card item -->
+				<div class="cards__item">
+					<article class="card">
+						<div class="card__img-container">
+							<img src="https://cdn.pixabay.com/photo/2020/06/01/10/02/puffin-5246026_960_720.jpg" alt="Imágen x" class="card__img-top">
+							<div class="card__img-views">Visto <span>21 veces</span></div>
+							<div class="card__img-actions">
+								<i class="fa fa-share-alt"></i>
+								<i class="far fa-heart"></i>
+							</div>
+						</div>
+						<div class="card__body">
+							<h3 class="card__title">La historia de Santa Beatriz XYXXX</h3>
+							
+							<div class="date">
+								<p class="t-uppercase">
+									10<br>
+									Ene
+								</p>
+								<p>
+									Sáb 16:00 - 22:00<br>
+									Zoom
+								</p>
+							</div>
+
+							<div class="card__price">
+								<p>Desde</p>
+								<p>S/ 15.00</p>
+							</div>
+						</div>
+					</article>
+					<a href="" class="color-gray t-uppercase fwb">
+						Ver Fuente
+						<i class="fa fa-angle-right"></i>
+					</a>
+				</div>
+				<!-- End Card Item -->
+				<!-- Card item -->
+				<div class="cards__item">
+					<article class="card">
+						<div class="card__img-container">
+							<img src="https://cdn.pixabay.com/photo/2020/06/01/10/02/puffin-5246026_960_720.jpg" alt="Imágen x" class="card__img-top">
+							<div class="card__img-views">Visto <span>21 veces</span></div>
+							<div class="card__img-actions">
+								<i class="fa fa-share-alt"></i>
+								<i class="far fa-heart"></i>
+							</div>
+						</div>
+						<div class="card__body">
+							<h3 class="card__title">La historia de Santa Beatriz XYXXX</h3>
+							
+							<div class="date">
+								<p class="t-uppercase">
+									10<br>
+									Ene
+								</p>
+								<p>
+									Sáb 16:00 - 22:00<br>
+									Zoom
+								</p>
+							</div>
+
+							<div class="card__price">
+								<p>Desde</p>
+								<p>S/ 15.00</p>
+							</div>
+						</div>
+					</article>
+					<a href="" class="color-gray t-uppercase fwb">
+						Ver Fuente
+						<i class="fa fa-angle-right"></i>
+					</a>
+				</div>
+				<!-- End Card Item -->
+			</div>
+
+			<p class="t-center section__btn-wrapper">
+				<a href="#" class="btn btn--outline-secondary t-uppercase">Ver más eventos</a>
+			</p>
+		</section>
+
+		<section class="container banner-contact">
+			<div class="banner-contact__content">
+				<h2 class="banner-contact__title">¿Te perderás de los mejores eventos?</h2>
+				<form action="#" class="form-inline">
+					<div class="material-input">
+					  <input type="email" id="correo" autocomplete="off">
+					  <label for="correo">Déjanos tu correo y te avisamos</label>
+					</div>
+
+					<input type="submit" value="Enviar" class="btn btn--outline-white">
+				</form>
+			</div>
+			<img src="assets/img/mail.png" alt="Icono de email">
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<div class="site-footer__navbar">
+			<div class="container">
+				<nav class="site-footer__nav">
+					<h3>
+						Conócenos
+						<i class="fa fa-angle-down color-secondary"></i>
+					</h3>
+					<ul class="active">
+						<li>
+							<a href="#">Acerca de nosotros</a>
+						</li>
+					</ul>
+				</nav>
+				<nav class="site-footer__nav">
+					<h3>
+						¿Necesitas ayuda?
+						<i class="fa fa-angle-down color-secondary"></i>
+					</h3>
+					<ul>
+						<li>
+							<a href="#">Preguntas frecuentes</a>
+						</li>
+						<li>
+							<a href="#">Contáctanos</a>
+						</li>
+					</ul>
+				</nav>
+				<nav class="site-footer__nav">
+					<h3>
+						Políticas
+						<i class="fa fa-angle-down color-secondary"></i>
+					</h3>
+					<ul>
+						<li>
+							<a href="#">Política de privacidad</a>
+						</li>
+						<li>
+							<a href="#">Política de cookies</a>
+						</li>
+						<li>
+							<a href="#">Términos y condiciones de uso</a>
+						</li>
+					</ul>
+				</nav>
+				<nav class="site-footer__nav">
+					<h3>
+						Contáctanos
+						<i class="fa fa-angle-down color-secondary"></i>
+					</h3>
+					<ul>
+						<li>Escribenos a nuestra casilla de correo:</li>
+						<li class="site-footer__email">
+							<i class="fa fa-envelope"></i>
+							Contacto@injoyplan.com
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<div class="site-footer__end">
+			<div class="container">
+				<p class="copy-right">Copyright © 2021 Injoyplan</p>
+
+				<div class="site-footer__social-wrapper">
+					<div class="site-footer__social">
+						<a href="#" class="social-icon">
+							<i class="fab fa-facebook"></i>
+						</a>
+						<a href="#" class="social-icon">
+							<i class="fab fa-twitter"></i>
+						</a>
+						<a href="#" class="social-icon">
+							<i class="fab fa-instagram"></i>
+						</a>
+						<a href="#" class="social-icon">
+							<i class="fab fa-youtube"></i>
+						</a>
+					</div>
+					<div class="book">
+						<img src="assets/img/book.png" alt="Libro icono">
+						<p>Libro de Reclamaciones</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Swiper Slider -->
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<!-- Script -->
+	<script src="assets/js/app.js"></script>
+</body>
+</html>
